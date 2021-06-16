@@ -18,7 +18,7 @@
 			var term=$('#search_term').val();
 
 			$.ajax({
-				url:'https://newsapi.org/v2/everything?q=' + term +'&apiKey=862c49da217641bb9f8bf168a26edf46',
+				url:'https://newsapi.org/v2/everything?q=' + term +'&apiKey=21b036625165410e9a10e7d03a4ef1e6',
 				success:function(data){
 					$('#result').empty();
 
@@ -40,7 +40,7 @@
 
 
 		$.ajax({
-			url:"https://newsapi.org/v2/top-headlines?country=jp&apiKey=ff4fdc1a967240ca9d03b810d90e64ff",
+			url:"https://newsapi.org/v2/top-headlines?country=jp&apiKey=21b036625165410e9a10e7d03a4ef1e6",
 			success:function(data){
 
 				for (var i in data.articles){
