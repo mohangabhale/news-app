@@ -18,7 +18,7 @@
 			var term=$('#search_term').val();
 
 			$.ajax({
-				url:'https://newsapi.org/v2/everything?q=' + term +'&apiKey=21b036625165410e9a10e7d03a4ef1e6',
+				url:'https://newsapi.org/v2/everything?q=tesla + term +'&apiKey=21b036625165410e9a10e7d03a4ef1e6',
 				success:function(data){
 					$('#result').empty();
 
@@ -40,7 +40,7 @@
 
 
 		$.ajax({
-			url:"https://newsapi.org/v2/top-headlines?country=us&apiKey=21b036625165410e9a10e7d03a4ef1e6",
+			url:"https://newsapi.org/v2/everything?q=tesla&from=2021-05-16&sortBy=publishedAt&apiKey=21b036625165410e9a10e7d03a4ef1e6",
 			success:function(data){
 
 				for (var i in data.articles){
